@@ -141,4 +141,7 @@ section .side-footer ul li a {
   section .control-btns ul li {
     min-width: 120px;
   }
+  section.contain form h4.title {
+    font-size: 26px;
+  }
 }
