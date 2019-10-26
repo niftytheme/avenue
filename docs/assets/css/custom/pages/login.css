@@ -133,7 +133,7 @@ section .side-footer ul li a {
 /* -- :: Media Query :: -- */
 @media (max-width: 767.98px) {
   section.contain {
-    padding: 220px 0 100px;
+    padding: 180px 0 100px;
   }
   section .control-btns {
     top: 100px;
