@@ -1,0 +1,144 @@
+/* -- :: Contain :: -- */
+section.contain {
+  position: relative;
+  min-height: 100vh;
+  padding: 260px 0;
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .15);
+  z-index: 9;
+}
+/* Control Buttons */
+section .control-btns {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section .control-btns ul {}
+section .control-btns ul li {
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 50px;
+  color: var(--thBlue);
+  min-width: 160px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid var(--thBorder);
+  font-size: 14px;
+  margin: 0 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all .2s ease;
+  user-select: none;  
+}
+section .control-btns ul li.active {
+  background: #fff;
+  color: var(--thBlue);  
+  border: 1px solid var(--thYellow);
+}
+/* form */
+section.contain form {
+  display: none;
+  max-width: 420px;
+  margin: 0 auto;  
+}
+section.contain form.active {
+  display: block;
+  animation: fadeIn 1s;
+}
+/* title */
+section.contain form h4.title {
+  font-size: 30px;
+  color: var(--thBlue);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+/* input group */
+section.contain .input-group {
+  position: relative;
+  width: 100%;
+}
+section.contain .input-group:not(:last-child) {
+  margin-bottom: 15px;
+}
+section.contain .input-group a.hash-link {
+  font-size: 14px;
+  color: #0069ff;
+  display: inline-block;
+  background: transparent;
+  border: 0;
+}
+section.contain .input-group i {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  height: 48px;
+  width: 30px;
+  color: #686f7a;
+  font-size: 18px;
+}
+section.contain .input-group input:not([type="submit"]),
+section.contain .input-group input:not([type="checkbox"]) {
+  padding: 10px 15px 10px 40px;
+  border: 1px solid var(--thBorder);
+  height: 48px;
+  font-size: 17px;
+  color: var(--thBlue);
+  width: 100%;
+  border-radius: 4px;
+  transition: border-color .2s ease;
+}
+section.contain .input-group label {
+  color: var(--thBlue);
+  font-size: 16px;
+  user-select: none;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background: var(--thYellow);
+}
+.custom-control-input:focus~.custom-control-label::before {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(255,159,28,.25);
+}
+section.contain .input-group input:not([type="submit"]):focus,
+section.contain .input-group input:not([type="checkbox"]):focus {
+  outline: none;
+  border-color: var(--thYellow);
+}
+section.contain .input-group input[type="checkbox"] {
+  width: 20px;
+}
+section.contain .input-group input[type="checkbox"] {}
+section.contain .input-group input:not([type="submit"])::placeholder {}
+section.contain .input-group input[type="submit"] {
+  height: 48px;
+  padding: 10px 15px;
+  font-size: 17px;
+}
+/* Side Footer */
+section .side-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+section .side-footer ul {}
+section .side-footer ul li {}
+section .side-footer ul li a {
+  font-size: 14px;
+  color: #0069ff;
+}
+/* --------------------------------- */
+
+/* -- :: Media Query :: -- */
+@media (max-width: 767.98px) {
+  section.contain {
+    padding: 220px 0 100px;
+  }
+  section .control-btns {
+    top: 100px;
+  }
+  section .control-btns ul li {
+    min-width: 120px;
+  }
+}

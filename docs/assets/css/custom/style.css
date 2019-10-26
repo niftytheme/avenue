@@ -1,0 +1,338 @@
+/* -- :: Fonts :: -- */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+/* --------------------------------- */
+
+/* -- :: Root :: -- */
+:root {
+  --thBlue        : #011627;
+  --thGreen       : #2EC4B6;
+  --thYellow      : #FF9F1C;
+  --thDarkYellow  : #FF7200;
+  --thRed         : #E71D36;
+  --thDarkRed     : #C40016;
+  --thBorder      : #e6e6e6;
+}
+/* --------------------------------- */
+
+/* -- :: Main :: -- */
+html {
+  overflow-x: hidden;
+}
+button {
+  cursor: pointer;
+  outline: none !important;
+}
+a {
+  text-decoration: none;
+}
+a,
+div,
+h1,
+h2,
+h3,
+h4,
+li,
+p,
+span {
+  font-family: 'Poppins', sans-serif;
+}
+.bg-2 {
+  background: rgba(3, 8, 30, 0.01);
+}
+/* Buttons & Links */
+button.th-btn,
+a.th-btn,
+input.th-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 2px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: var(--thYellow);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  transition: all .2s ease-in-out !important;
+  text-decoration: none;
+}
+button.th-btn i,
+a.th-btn i {
+  font-size: 16px;
+}
+button.th-btn:hover,
+a.th-btn:hover,
+input.th-btn:hover {
+  background: var(--thDarkYellow);
+  color: #fff !important;
+}
+
+/* --------------------------------- */
+
+/* -- :: Custom Class :: -- */
+.th-yellow {
+  color: var(--thYellow);
+}
+/* Padding */
+.py-80 {
+  padding: 80px 0;
+}
+/* Margin */
+.mb-20 {
+  margin-bottom: 20px;
+}
+/* Border */
+.bt-1 {
+  border-top: 1px solid var(--thBorder)
+}
+/* Section Head */
+.section-head {
+  margin-bottom: 45px;
+}
+.section-head h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: var(--thBlue);
+}
+.section-head p {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin-bottom: 0;
+}
+.section-head .th-btn {
+  margin-top: 20px;
+}
+.section-head .th-btn i {
+  margin-left: 10px;
+  font-size: 20px;
+}
+.section-head p {
+  max-width: 700px;
+}
+/* Features Item */
+.fe-item {
+  margin-bottom: 30px;
+}
+.fe-item.bordered {
+  position: relative;
+  padding: 30px 20px;
+  border: 1px solid var(--thBorder);
+  background: #fff;
+}
+.fe-item.bordered::before {
+  position: absolute;
+  content: '';
+  right: -1rem;
+  bottom: -1rem;
+  left: 1rem;
+  top: 1rem;
+  background: #f8fafb;
+  border-radius: 4px;
+  z-index: -1 !important;
+  transition: 0.3s ease;
+}
+.fe-item.bordered:hover::before {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.fe-item.bordered::after {
+  display: none;
+}
+.fe-item img {
+  position: relative;
+  z-index: 2;
+  max-height: 70px;
+}
+.fe-item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 60px;
+  height: 60px;
+  background: rgba(242, 187, 21, 0.2);
+  border-radius: 30% 70% 50% 50% / 30% 41% 59% 70%;
+}
+.fe-item .text h3 {
+  min-height: 40px;
+  text-transform: capitalize;
+  color: var(--thBlue);
+  font-size: 20px;
+  font-weight: bold;
+}
+.fe-item .text p {
+  font-size: 17px;
+  color: #686f7a;
+}
+/* --------------------------------- */
+
+/* -- :: Loading Screen :: -- */
+.loading {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--thYellow);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -3px 0 0 -3px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* --------------------------------- */
+
+/* -- :: Media Query :: -- */
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) {
+  /* -- Buttons & Links -- */
+  button.th-btn,
+  a.th-btn {
+    padding: 10px 17px;    
+    font-size: 14px;    
+  }
+  button.th-btn,
+  a.th-btn {
+    font-size: 14px;
+  }  
+  /* -- Section Head -- */
+  .section-head h2 {
+    font-size: 28px;    
+  }
+  /* Features Item */
+  .fe-item img {
+    max-width: 60px;
+  }
+  .fe-item .text h3 {
+    font-size: 18px;
+    min-height: 35px;
+  }
+  .fe-item .text p {
+    font-size: 16px;
+  }
+  
+}
+@media (max-width: 991.98px) {}
+@media (max-width: 767.98px) {
+  /* Padding */
+  .py-80 {
+    padding: 50px 0;
+  }
+  /* Features Item */
+  .fe-item {
+    text-align: center;
+  }
+  .fe-item::after {
+    left: 39%;
+    width: 50px;
+    height: 50px;
+  }
+  .fe-item img {
+    max-width: 50px;
+  }
+  .fe-item .text h3 {
+    font-size: 17px;
+  }
+  /* Section Head */
+  .section-head {
+    margin-bottom: 32px;
+  }
+  .section-head h2 {
+    font-size: 24px
+  }
+  /* Buttons & Links */
+  button.th-btn,
+  a.th-btn {  
+    font-size: 12px;
+  }
+}
