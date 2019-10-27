@@ -129,7 +129,7 @@
 
   // Owl Carousel
   $(document).ready(function(){
-    $(".courses-carousel").owlCarousel({
+    $(".courses-carousel, .events-carousel").owlCarousel({
       nav: true,
       margin: 30,
       autoplay: false,
