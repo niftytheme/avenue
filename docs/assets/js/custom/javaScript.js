@@ -104,19 +104,20 @@
   // Testimonials carousel 
   $(document).ready(function(){
     $(".testimonials-carousel").owlCarousel({
-      nav: false,
+      nav: true,
       margin: 30,
       autoplay: false,
-      autoplayHoverPause: true,
       loop: true,
       responsive : {
         // breakpoint from 0 up
         0 : {
-          items: 1
+          items: 1,
+          autoplay: false
         },
         // breakpoint from 768 up
         768 : {
-          items: 2
+          items: 2,
+          autoplay: false
         },
         // breakpoint from 992 up
         992 : {
