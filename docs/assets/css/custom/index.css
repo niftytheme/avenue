@@ -630,7 +630,6 @@ section.section-9 img {
 
 /* -- :: Media Query :: -- */
 
-/* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   /* -- :: Header :: -- */
   header {
@@ -747,7 +746,6 @@ section.section-9 img {
   }
   /* --------------------------------- */  
 }
-/* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   /* -- :: Header :: -- */
   header .t-c h1 {
