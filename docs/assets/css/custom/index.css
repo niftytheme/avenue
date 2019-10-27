@@ -1,7 +1,7 @@
 /* -- :: Header :: -- */
 header {
   position: relative;
-  background: url(https://via.placeholder.com/1920x1080.jpg) center no-repeat;
+  background: url(./../../images/pages/bg-03.jpg) center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   padding: 276px 0 200px;
@@ -228,7 +228,7 @@ section.section-3 .des .price .old {
 .video-section {
   position: relative;
   overflow: hidden;
-  background: url(https://via.placeholder.com/1920x1080.jpg) center no-repeat;
+  background: url(./../../images/pages/bg-02.jpg) center no-repeat;
   background-size: cover;
 }
 .video-section::before {
