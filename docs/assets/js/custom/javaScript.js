@@ -1,5 +1,5 @@
 /*
-	Template Name: Avenue - HTML5 Landing Page Template
+	Template Name: Arsim - HTML5 Education Template
 	Author: Nifty Theme - Osama Bakri
 	Themeforest Account: https://themeforest.net/user/niftytheme
 	Contact: niftytheme@gmail.com
@@ -154,7 +154,7 @@
 
   // Select list
   $(document).ready(function() {
-    $('.avenue-select').select2();
+    $('.arsim-select').select2();
   });
 
   // Team items
