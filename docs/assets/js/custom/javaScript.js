@@ -101,14 +101,29 @@
     $(this).toggleClass('clicked');
   });
 
-  // Testimonials Slider
-  $('section.testimonials .dots li').on('click', function () {
-    // addClass 'active' and remove it form other elements
-    $(this).addClass('active').siblings().removeClass('active');
-    // removeClass 'show'
-    $('section.testimonials .text-c, section.testimonials img').removeClass('show');
-    // addClass 'show' to 'data-show'
-    $($(this).data('show')).addClass('show');
+  // Testimonials carousel 
+  $(document).ready(function(){
+    $(".testimonials-carousel").owlCarousel({
+      nav:true,
+      margin: 30,
+      autoplay: false,
+      autoplayHoverPause: true,
+      loop: true,
+      responsive : {
+        // breakpoint from 0 up
+        0 : {
+          items: 1
+        },
+        // breakpoint from 768 up
+        768 : {
+          items: 2
+        },
+        // breakpoint from 992 up
+        992 : {
+          items: 3
+        }
+      }
+    });
   });
 
   // Owl Carousel

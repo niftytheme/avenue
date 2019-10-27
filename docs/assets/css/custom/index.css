@@ -315,98 +315,68 @@ section.section-3 .des .price .old {
 section.testimonials {
   overflow: hidden;
 }
-section.testimonials .img-c {
-  height: 400px;
+/* item */
+section.testimonials .item {
+  position: relative;
+  padding: 130px 30px 30px;
+  border: 1px solid var(--thBorder);
+  border-radius: 4px;
+  background: #fff;
+  margin-top: 40px;
 }
-section.testimonials img {
+/* client information */
+section.testimonials .item .client-info {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  max-height: 400px;
-  margin-right: 150px;
-  opacity: 0;
-  transition: all .3s ease-in-out;
-}
-section.testimonials img.show {
-  display: inline-block;
-  opacity: 1;
-  margin-right: 0;
-}
-section.testimonials .left-border-bottom {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 120vh;
-  border-width: 4px;
-  border-color: var(--thBorder)
-}
-section.testimonials .right-border-bottom {
-  position: absolute;
+  top: -40px;
+  width: 100%;
   left: 0;
-  bottom: -20px;
-  width: 100vh;
-  border-width: 4px;
-  border-color: var(--thBorder)
+  padding: 0 30px;
 }
-/* head */
-section.testimonials .head {
-  margin-bottom: 40px;
+section.testimonials .item .client-info img {
+  border-radius: 50%;
+  border: 5px solid #fff;
+  max-width: 90px;
+  max-height: 90px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.10);
 }
-section.testimonials .head h2 {
-  font-size: 36px;
-  color: var(--thBlue);
-  font-weight: bold;
+section.testimonials .item .client-info .text {
+  
 }
-section.testimonials .text-c {
-  display: none;
-}
-section.testimonials .text-c.show {
-  display: block;
-}
-section.testimonials .text-c .text {
-  position: relative;
-  margin-bottom: 20px;
+section.testimonials .item .client-info .text h4 a {
   font-size: 18px;
-  font-weight: bold;
   color: var(--thBlue);
 }
-section.testimonials .text-c .text::after,
-section.testimonials .text-c .text::before {
+section.testimonials .item .client-info .text p {
+  font-size: 14px;
+}
+section.testimonials .item .client-info .text p a {
+  color: var(--thYellow);
+  transition: color .2s ease;
+}
+section.testimonials .item .client-info .text p a:hover {
+  color: var(--thDarkYellow);
+}
+/* client comment */
+section.testimonials .item p.client-comment {
+  color: #686f7a;
+}
+section.testimonials .item p.client-comment::after,
+section.testimonials .item p.client-comment::before {
   position: relative;
-  content: '\f10d';
-  display: inline-block;
+  content: '\f10e';
   font: normal normal normal 14px/1 FontAwesome;
-  font-size: 16px;
+  font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-right: 10px;
-}
-section.testimonials .text-c .text::after {
-  content: '\f10e';
-  margin-right: 0;
+  font-size: 17px;
+  color: #686f7a;
   margin-left: 10px;
 }
-section.testimonials .text-c .name {
-  font-size: 16px;
-  color: #686f7a;
-  text-transform: capitalize;
-  margin-bottom: 20px;
-}
-/* dots */
-section.testimonials .dots li {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--thBlue);
-  transition: background .2s ease-in-out;
-  cursor: pointer;
-}
-section.testimonials .dots li:not(:last-child) {
+section.testimonials .item p.client-comment::before {
+  content: '\f10d';
   margin-right: 10px;
-}
-section.testimonials .dots li.active {
-  background: var(--thYellow);
+  margin-left: 0;
 }
 /* --------------------------------- */
 
@@ -731,18 +701,6 @@ section.section-9 img {
   }
   /* --------------------------------- */
   
-  /* -- :: Testimonials :: -- */  
-  section.testimonials .head h2 {
-    font-size: 32px;
-  }
-  section.testimonials .text-c .text {
-    font-size: 16px;
-  }
-  section.testimonials .text-c .name {
-    font-size: 15px;
-  }
-  /* --------------------------------- */
-  
   /* -- :: Team :: -- */
   section.team .item .title h4 {
     font-size: 17px;
@@ -802,11 +760,6 @@ section.section-9 img {
     margin-top: 40px;
   }
   /* --------------------------------- */  
-
-  /* -- :: Testimonials :: -- */
-  section.testimonials .img-c {
-    height: 320px;
-  }
   /* -- :: Testimonials :: -- */
   section.testimonials img {
     max-height: 320px;
@@ -859,19 +812,6 @@ section.section-9 img {
   section.video-section p {
     font-size: 16px;
   }
-  /* --------------------------------- */
-
-  /* -- :: Testimonials :: -- */
-  section.testimonials {
-    text-align: center
-  }
-  section.testimonials .head {
-    margin-bottom: 32px;
-    text-align: center;
-  }
-  section.testimonials .head h2 {
-    font-size: 24px;
-  }      
   /* --------------------------------- */
 
   /* -- :: Team :: -- */
