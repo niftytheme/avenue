@@ -104,7 +104,7 @@
   // Testimonials carousel 
   $(document).ready(function(){
     $(".testimonials-carousel").owlCarousel({
-      nav:true,
+      nav: false,
       margin: 30,
       autoplay: false,
       autoplayHoverPause: true,
@@ -128,8 +128,8 @@
 
   // Owl Carousel
   $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      nav:true,
+    $(".courses-carousel").owlCarousel({
+      nav: true,
       margin: 30,
       autoplay: false,
       autoplayHoverPause: true,
